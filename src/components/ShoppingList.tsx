@@ -15,12 +15,26 @@
 
 import type { JSX } from 'react';
 
-function ShoppingList(): JSX.Element {
+interface Item {
+  id: number;
+  product: string;
+  qty: number;
+}
+
+interface ShoppingListProps {
+  items: Item[];
+}
+
+function ShoppingList(props: ShoppingListProps): JSX.Element {
   return (
-    <div className="">
+    <div className="card">
       <h1>Shopping List</h1>
       <ul>
-        <li>Item1</li>
+        {props.items.map((item) => (
+          <li key={item.id}>
+            {item.product} - {item.qty}
+          </li>
+        ))}
       </ul>
     </div>
   );
