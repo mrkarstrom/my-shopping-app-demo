@@ -25,12 +25,12 @@ interface ShoppingListProps {
   items: Item[];
 }
 
-function ShoppingList(props: ShoppingListProps): JSX.Element {
+function ShoppingList({ items }: ShoppingListProps): JSX.Element {
   return (
     <div className="card">
       <h1>Shopping List</h1>
       <ul>
-        {props.items.map((item) => (
+        {items.map((item) => (
           <li key={item.id}>
             {item.product} - {item.qty}
           </li>
