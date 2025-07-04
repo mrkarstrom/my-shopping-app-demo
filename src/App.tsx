@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 // import reactLogo from './assets/react.svg';
 // import viteLogo from '/vite.svg';
-import Greeter from './components/Greeter';
+// import Greeter from './components/Greeter';
 
 import './App.css';
 import ShoppingList from './components/ShoppingList';
@@ -23,10 +23,18 @@ function App() {
 
   return (
     <>
-      <div className="logo logo-spin">
-        {/* <Greeter person="Magnus" /> */}
+    <div className="container">
+
+      <div className="card">
         <ShoppingList items={items} />
       </div>
+      <div className="card">
+        <ShoppingList items={items} />
+      </div>
+      <div className="card">
+        <ShoppingList items={items} />
+      </div>
+    </div>
     </>
   );
 }

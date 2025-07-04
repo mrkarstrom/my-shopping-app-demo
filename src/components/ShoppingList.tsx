@@ -27,7 +27,7 @@ interface ShoppingListProps {
 
 function ShoppingList({ items }: ShoppingListProps): JSX.Element {
   return (
-    <div className="card">
+    <div>
       <h1>Shopping List</h1>
       <ul>
         {items.map((item) => (
