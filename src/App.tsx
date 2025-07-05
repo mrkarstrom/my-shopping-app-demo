@@ -6,6 +6,7 @@
 import { useState } from 'react';
 import './App.css';
 import ShoppingList from './components/ShoppingList';
+import ShoppingListForm from './components/ShoppingListForm';
 import type Item from './models/items';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <ShoppingList items={items} />
         </div>
       </div>
+      <ShoppingListForm className="container"></ShoppingListForm>
     </>
   );
 }

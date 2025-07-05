@@ -1,6 +1,10 @@
 function ShoppingListForm(): React.JSX.Element {
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    console.log('Submitted');
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input type="text" name="" id="" placeholder="Product Name" />
       <button type="submit">Add</button>
     </form>
