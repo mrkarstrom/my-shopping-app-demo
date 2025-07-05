@@ -13,6 +13,7 @@ function ShoppingListForm({
     console.log('Submitted');
     const newProduct = inputRef.current!.value;
     onAddItem(newProduct);
+    inputRef.current!.value = '';
   }
   return (
     <form onSubmit={handleSubmit}>
