@@ -3,38 +3,28 @@
 // import viteLogo from '/vite.svg';
 // import Greeter from './components/Greeter';
 
+import { useState } from 'react';
 import './App.css';
 import ShoppingList from './components/ShoppingList';
+import type Item from './models/items';
 
 function App() {
   // const [count, setCount] = useState(0);
-  const items = [
-    {
-      id: 1,
-      product: 'Lemon',
-      qty: 2,
-    },
-    {
-      id: 2,
-      product: 'Apple',
-      qty: 4,
-    },
-  ];
+  const [items, setItems] = useState<Item[]>([]);
 
   return (
     <>
-    <div className="container">
-
-      <div className="card">
-        <ShoppingList items={items} />
+      <div className="container">
+        <div className="card">
+          <ShoppingList items={items} />
+        </div>
+        <div className="card">
+          <ShoppingList items={items} />
+        </div>
+        <div className="card">
+          <ShoppingList items={items} />
+        </div>
       </div>
-      <div className="card">
-        <ShoppingList items={items} />
-      </div>
-      <div className="card">
-        <ShoppingList items={items} />
-      </div>
-    </div>
     </>
   );
 }
