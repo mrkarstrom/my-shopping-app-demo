@@ -12,7 +12,10 @@ import type Item from './models/items';
 function App() {
   // const [count, setCount] = useState(0);
   const [items, setItems] = useState<Item[]>([]);
-
+  const addItem = (product: string) => {
+    console.log('Made it  to the app');
+    console.log(product);
+  };
   return (
     <>
       <div className="container">
@@ -26,7 +29,7 @@ function App() {
           <ShoppingList items={items} />
         </div>
       </div>
-      <ShoppingListForm className="container"></ShoppingListForm>
+      <ShoppingListForm onAddItem={addItem} />
     </>
   );
 }
