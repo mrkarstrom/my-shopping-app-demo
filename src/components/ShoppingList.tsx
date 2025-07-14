@@ -14,12 +14,7 @@
 // export default ShoppingList;
 
 import type { JSX } from 'react';
-
-interface Item {
-  id: number;
-  product: string;
-  qty: number;
-}
+import type Item from '../models/items';
 
 interface ShoppingListProps {
   items: Item[];
