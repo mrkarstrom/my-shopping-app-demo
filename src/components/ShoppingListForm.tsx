@@ -1,12 +1,8 @@
 import { useRef } from 'react';
 import type { JSX } from 'react';
-interface ShoppingListFormProps {
-  onAddItem: (item: string) => void;
-}
+import type ShoppingListFormProps from '../models/shoppingListProps';
 
-function ShoppingListForm({
-  onAddItem,
-}: ShoppingListFormProps): JSX.Element {
+function ShoppingListForm({ onAddItem }: ShoppingListFormProps): JSX.Element {
   const inputRef = useRef<HTMLInputElement>(null);
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
