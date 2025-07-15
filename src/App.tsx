@@ -4,10 +4,12 @@
 import Greeter from './components/Greeter';
 
 import './App.css';
-import ShoppingList from './components/ShoppingList';
+// import ShoppingList from './components/ShoppingList';
+import ShoppingList2 from './components/ShoppingLisst2';
 
 function App() {
   // const [count, setCount] = useState(0);
+
   const items = [
     {
       id: 1,
@@ -20,12 +22,11 @@ function App() {
       qty: 4,
     },
   ];
-
   return (
     <>
       <div className="logo logo-spin">
         {/* <Greeter person="Magnus" /> */}
-        <ShoppingList items={items} />
+        <ShoppingList2 items={items} />
       </div>
     </>
   );
