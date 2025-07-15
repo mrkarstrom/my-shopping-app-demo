@@ -1,14 +1,5 @@
 import type { JSX } from 'react';
-
-interface ShoppingListProps2 {
-  items: Item[];
-}
-
-interface Item {
-  id: number;
-  product: string;
-  qty: number;
-}
+import type ShoppingListProps2 from './shoppingListProps';
 
 export default function ShoppingList2({
   items,

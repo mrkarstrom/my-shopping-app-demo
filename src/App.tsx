@@ -5,7 +5,7 @@ import Greeter from './components/Greeter';
 
 import './App.css';
 // import ShoppingList from './components/ShoppingList';
-import ShoppingList2 from './components/ShoppingLisst2';
+import ShoppingList2 from './components/ShoppingList/ShoppingLisst2';
 
 function App() {
   // const [count, setCount] = useState(0);
